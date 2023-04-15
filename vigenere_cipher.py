@@ -1,5 +1,12 @@
 # 2:Pseudocode
+import pyfiglet
+
 # Define variables
+intro = pyfiglet.figlet_format("WELCOME".center(39, "="), font="digital")
+no_option = ("No", "no", "NO", "n", "N")
+yes_option = ("Yes", "yes", "YES", "y", "Y")
+gratitude = "\033[42m" + "(: Thank you for using this program! :)" + "\033[0m"
+
 # Display welcome message and its function
 # Ask for user input
 # Translate the letters in message to its corresponding numbers (0-25)
