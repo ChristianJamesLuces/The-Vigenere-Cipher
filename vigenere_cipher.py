@@ -55,6 +55,8 @@ while True:
     # Asking the user if they want to try it again
     answer = str(input("\nDo you want to try it again? (Yes or No): "))
     # If the user want to try it again 
+    if answer in yes_option: 
+        print("\n\n")
     # If the user do not want to try it again
     # If the user did not input a valid answer
     # Exit the loop if they do not want to try it again
