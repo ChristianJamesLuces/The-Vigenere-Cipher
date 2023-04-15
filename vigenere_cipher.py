@@ -8,6 +8,10 @@ yes_option = ("Yes", "yes", "YES", "y", "Y")
 gratitude = "\033[42m" + "(: Thank you for using this program! :)" + "\033[0m"
 
 # Display welcome message and its function
+print(intro)
+print("\033[45;1m" + "This program will show you the Add, Mod, and the Ciphertext of base from your Message and Key.\n" + "\033[0m")
+print("\033[7;1m" + "REMINDER:" + "\033[0m" + " The 'Message' and 'Key' should be all in uppercase letters and no space....\n\n")
+
 # Ask for user input
 # Translate the letters in message to its corresponding numbers (0-25)
 # Translate the letters in key to its corresponding numbers (0-25)
