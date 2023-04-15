@@ -58,6 +58,11 @@ while True:
     if answer in yes_option: 
         print("\n\n")
     # If the user do not want to try it again
+    elif answer in no_option:
+        print("\n" + "<" * 100) 
+        print(gratitude.center(100))
+        print(">" * 100)
+        break
     # If the user did not input a valid answer
     # Exit the loop if they do not want to try it again
     # Go back to the start of the loop
