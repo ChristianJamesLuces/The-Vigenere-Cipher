@@ -64,5 +64,8 @@ while True:
         print(">" * 100)
         break
     # If the user did not input a valid answer
+    while answer not in no_option+yes_option:
+        print ("Invalid Input")
+        answer = str(input("\nDo you want to try it again? (Yes or No): "))
     # Exit the loop if they do not want to try it again
     # Go back to the start of the loop
