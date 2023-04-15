@@ -73,4 +73,6 @@ while True:
             print(gratitude.center(100))
             print(">" * 100)
             exit()
-    # Go back to the start of the loop
+        # Go back to the start of the loop
+        if answer in yes_option:
+            continue
