@@ -3,13 +3,15 @@ This program asks the user for the plaintext and keyword and produces the cipher
 
 ## Features
 This program provides the following features:
-- Displays welcome message and instructions
+- Displays welcome message and highlighted instructions
+- It has frames or separators
 - Asks the user to input message and key (all uppercase letters, no space)
 - Can convert the inputs in all uppercase letters and no spaces
 - Translates the letters to their corresponding letter values (0-25)
 - Calculates the Add, Mod, and Ciphertext based on the inputs in the message and key
-- Displays the Add, Mod, and Ciphertext along with the original message and key
+- Displays the Add, Mod, and Ciphertext along with the original message and key, emphasizing the letters through font color and underlining
 - Asks the user if they want to retry and it also handles invalid input
+- Highlighted gratitude message as it exits the program
 
 ## Installation
 The Vigenère Cipher program requires Python 3 and 'pyfiglet' to be installed on your computer. If you don't have Python 3 installed on your computer, you can download it from the official website: https://www.python.org/downloads. To install the 'pyfiglet' package that is required you can use this pip:
