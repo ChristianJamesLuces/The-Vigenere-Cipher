@@ -32,7 +32,17 @@ while True:
         else:
             print("Invalid input. Please enter letters only.\n")
             continue
+        
 # Calculate Add, Mod, and Ciphertext
+add_numbers = []
+key_set = []
+for i in range(len(message_numbers)):
+    key_list = key_numbers[i % len(key_numbers)]
+    add_numbers.append((message_numbers[i] + key_list))
+    key_set += [key_list]
+
+mod_numbers = [(num % 26) for num in add_numbers]
+ciphertext = "".join([chr(num + 65) for num in mod_numbers])
 # Print the output
 # Asking the user if they want to try it again
 # If the user want to try it again 
