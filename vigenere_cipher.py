@@ -32,7 +32,7 @@ while True:
         else:
             print("Invalid input. Please enter letters only.\n")
             continue
-        
+
 # Calculate Add, Mod, and Ciphertext
 add_numbers = []
 key_set = []
@@ -43,7 +43,13 @@ for i in range(len(message_numbers)):
 
 mod_numbers = [(num % 26) for num in add_numbers]
 ciphertext = "".join([chr(num + 65) for num in mod_numbers])
+
 # Print the output
+print("\033[93;1m" + "\nMessage: " + "\033[0m" + "\033[91;1m" + f"{message} {message_numbers}" + "\033[0m") 
+print("\033[93;1m" + "Key:     " + "\033[0m" + "\033[91;1m" + f"{key} {' ' * (len(message) - len(key))} {key_set}" + "\033[0m") 
+print("\033[93;1m" + "Add:     " + "\033[0m" + "\033[91;1m" + f"{add_numbers}" + "\033[0m") 
+print("\033[93;1m" + "Mod:     " + "\033[0m" + "\033[91;1m" + f"{mod_numbers}" + "\033[0m") 
+print("\033[93;1;4m" + "Ciphertext:" + "\033[0m" + "\033[94;1m" + f" {ciphertext}" + "\033[0m")
 # Asking the user if they want to try it again
 # If the user want to try it again 
 # If the user do not want to try it again
