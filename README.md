@@ -1,4 +1,4 @@
-## The Vigenère Cipher
+# The Vigenère Cipher
 This program asks the user for the plaintext and keyword and produces the ciphertext using the vigenère cipher.
 
 ## Features
@@ -35,4 +35,3 @@ Contributions are appreciated! If you find some bugs or errors and also if you h
 This program is created by Chrisitan James M. Luces.
 
 The template for this README file was based on the templates from [makeareadme.com](https://www.makeareadme.com/) and [readme.so](https://readme.so/editor).
-# The-Vigenere-Cipher
